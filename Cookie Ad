@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<style>
+
+body {background-color: #C1E3C1;}
+
+p {text-align: center;}
+
+img {
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+
+</style>
+
+<img src="Cookie Ad.png">
+</a>
+  
+<p style="font-size:22px;"> Ugh, not an advertisement. These are becoming more common in just about every aspect of daily life. There was a time they were relegated to just magazines and billboards. Back then they were easy to ignore. Now just about every platform has advertisements, including exploring apparently. It's a sad state of affairs. </p>
+
+</body>
+</html>
