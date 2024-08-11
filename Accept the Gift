@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<style>
+
+body {background-color: #996F82;}
+
+p {text-align: center;}
+
+img {
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+
+</style>
+
+<img src="Accept the Gift.png" usemap="#down">
+</a>
+
+<map name="down">
+<area shape="rect" coords="0,0,600,400" href="Balloon with Flower Friend.html">
+
+<p style="font-size:22px;"> Oh, I'm sorry to disturb. </p>
+
+</body>
+</html>
