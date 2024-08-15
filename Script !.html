@@ -27,6 +27,9 @@ onmouseleave="mouseleave()"
      <area alt="crunch" title="" shape="poly" coords="72,131,21,137,21,198,65,215,91,213,94,187,76,193" onmouseover="mouseover('crunch')"
 onmouseleave="mouseleave()"    
     />   
+     <area alt="wood" title="" shape="poly" coords="113,12,124,24,125,45,81,48,81,93,71,93,71,71,29,70,23,34,77,28" onmouseover="mouseover('wood')"
+onmouseleave="mouseleave()"    
+    />   
     <!--
 
         <area alt="instagram" title="" shape="poly" coords="177,214,193,277,475,212,466,149" onmouseover="mouseover('instagram')"
@@ -53,6 +56,11 @@ function mouseover(x) {
     case 'crunch':
       {
         document.getElementById("script").src = "ScriptCrunch.png";
+      };
+      break;
+    case 'wood':
+      {
+        document.getElementById("script").src = "ScriptWood.png";
       };
       break;
     default:
