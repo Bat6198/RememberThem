@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<img id="script" src="Script !.png" alt="" usemap="#Map" />
+<map name="Map" id="Map">
+    <area alt="purp" title="" shape="poly" coords="102,345,100,312,160,311,163,364,107,368,94,379,42,380,42,364" onmouseover="mouseover('purp')"
+onmouseleave="mouseleave()"    
+    />
+    
+    <!--
+    
+    <area alt="twitter" title="" shape="poly" coords="177,214,193,277,475,212,466,149" onmouseover="mouseover('twitter')"
+onmouseleave="mouseleave()"    
+    />
+        <area alt="instagram" title="" shape="poly" coords="177,214,193,277,475,212,466,149" onmouseover="mouseover('instagram')"
+onmouseleave="mouseleave()"    
+    />
+     etc 
+     
+     
+     -->
+</map>
+<script>
+function mouseover(x) {
+  switch (x) {
+    case 'purp':
+      {
+        document.getElementById("script").src = "ScriptPurp.png";
+      };
+      break;
+    default:
+      ;
+      break;
+  }
+
+}
+
+function mouseleave() {
+  document.getElementById("script").src = "Script !.png";
+}
+</script>
+
+
+
+</body>
+</html>
