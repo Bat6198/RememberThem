@@ -36,6 +36,9 @@ onmouseleave="mouseleave()"
            <area alt="tv" title="" shape="poly" coords="229,21,267,42,263,69,238,105,184,102,172,93,159,46,167,25" onmouseover="mouseover('tv')"
 onmouseleave="mouseleave()"    
     />   
+               <area alt="home" title="" shape="poly" coords="186,197,138,199,133,260,113,285,124,295,156,276,161,251,193,249" onmouseover="mouseover('home')"
+onmouseleave="mouseleave()"    
+    />   
     
 </map>
 <script>
@@ -69,6 +72,11 @@ function mouseover(x) {
      case 'tv':
       {
         document.getElementById("script").src = "ScriptTV.png";
+      };
+      break;
+     case 'home':
+      {
+        document.getElementById("script").src = "ScriptHome.png";
       };
       break;
     default:
