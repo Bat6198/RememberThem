@@ -1,5 +1,8 @@
-.slideshow_container {
-    cursor: pointer;
-    display: block;
-    margin: 0 auto 15px auto;
-    position: relative;
+#slider{
+    width: 720px;
+    height: 300px;
+    overflow: hidden;      
+    position:relative;
+    left:50%;
+    transform:translateX(-50%);
+}
