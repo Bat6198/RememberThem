@@ -1,12 +1,5 @@
-.carousel img {
-
-     margin: auto;
-
-}
-
-.prod-slider-container .item a {
-     display: block;
-     margin: 0 auto;
-     float: none;
-     text-align: center;
+.carousel {
+    width:640px;
+    height:360px;
+    margin: 0 auto;
 }
