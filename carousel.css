@@ -9,7 +9,7 @@
 }
 
 
-#slider div {
+#wait div {
     display:none;
     position: absolute;
     white-space: nowrap;
@@ -18,6 +18,6 @@
 
 
 }
-#slider div:first-child {
+#wait div:first-child {
     display:block;
 }        
