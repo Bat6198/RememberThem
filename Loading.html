@@ -2,6 +2,8 @@
 <html>
 <body>
 <head>
+
+<link rel="stylesheet" href="carousel.css">
 <style>
 
 body {background-color: #000000;}
@@ -153,14 +155,6 @@ function carousel() {
   if (myIndex > x.length) {myIndex = 1}    
   x[myIndex-1].style.display = "block";  
   setTimeout(carousel, 100);
-}
-
-.carousel {
-  width:600px;
-  height:400px;
-}
-.carousel-inner > .item > img {
-    margin: 0 auto;
 }
 </script>
 
