@@ -3,3 +3,8 @@
     height:360px;
     margin: 0 auto;
 }
+
+.carousel-indicators{
+    width:auto;
+    margin: 0 auto;
+}
