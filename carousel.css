@@ -21,3 +21,8 @@
 #wait div:first-child {
     display:block;
 }        
+
+#slider > p{
+    width:800px;
+    height:50px;
+}
