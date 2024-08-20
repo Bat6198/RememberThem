@@ -13,24 +13,6 @@ display: block;
 margin-left: auto;
 margin-right: auto;
 }
-
-.carousel {
-  width:600px;
-  height:400px;
-}
-.carousel-inner > .item > img {
-    margin: 0 auto;
-}
-div.c-wrapper{
-    width: 100%; /* for example */
-    margin: auto;
-}
-
-.carousel-inner > .item > img, 
-.carousel-inner > .item > a > img{
-width: 100%; /* use this, or not */
-margin: auto;
-}
 </style>
 
 <div class="w3-content w3-section" style="max-width:600px">
@@ -173,7 +155,23 @@ function carousel() {
   setTimeout(carousel, 100);
 }
 
+.carousel {
+  width:600px;
+  height:400px;
+}
+.carousel-inner > .item > img {
+    margin: 0 auto;
+}
+div.c-wrapper{
+    width: 100%; /* for example */
+    margin: auto;
+}
 
+.carousel-inner > .item > img, 
+.carousel-inner > .item > a > img{
+width: 100%; /* use this, or not */
+margin: auto;
+}
 </script>
 
 <map name="next">
