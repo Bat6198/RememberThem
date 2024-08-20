@@ -1,3 +1,5 @@
-.carousel-inner .item img {
-    margin:0 auto;
-}
+.slideshow_container {
+    cursor: pointer;
+    display: block;
+    margin: 0 auto 15px auto;
+    position: relative;
