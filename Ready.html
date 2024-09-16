@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<style>
+
+body {background-color: #172417;}
+
+p {text-align: center;}
+
+img {
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+
+</style>
+
+<div class="dance" style="max-width:600px">
+  <img class="mySlides" src="Ready.png" usemap="#next" style="width:100%">
+  <img class="mySlides" src="Ready 1.png" usemap="#next" style="width:100%">
+  <img class="mySlides" src="Ready 2.png" usemap="#next" style="width:100%">
+  <img class="mySlides" src="Ready 1.png" usemap="#next" style="width:100%">
+  <img class="mySlides" src="Ready 3.png" usemap="#next" style="width:100%">
+  <img class="mySlides" src="Ready 2.png" usemap="#next" style="width:100%">
+  <img class="mySlides" src="Ready 3.png" usemap="#next" style="width:100%">
+  <img class="mySlides" src="Ready 4.png" usemap="#next" style="width:100
+  <img class="mySlides" src="Ready 3.png" usemap="#next" style="width:100%">
+  <img class="mySlides" src="Ready 2.png" usemap="#next" style="width:100%">
+  <img class="mySlides" src="Ready 1.png" usemap="#next" style="width:100%">
+  <img class="mySlides" src="Ready.png" usemap="#next" style="width:100%">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 1500);
+}
+</script>
+
+<map name="next">
+<area shape="rect" coords="0,0,600,400" href="Night End.html">
+
+</body>
+</html>
