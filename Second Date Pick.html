@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<body>
+<head>
+<style>
+  
+body {background-color: #946978;}
+
+p {text-align: center;}
+
+img {
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+
+</style>
+
+<div class="Second Date Pick" style="max-width:600px">
+   <div id="wait">
+  <img class="mySlides" src="Second Date Pick 1.png" usemap="#heart" usemap="#leave" usemap="#hit" usemap="#bean" style="width:100%">
+  <img class="mySlides" src="Second Date Pick 2.png" usemap="#heart" usemap="#leave" usemap="#hit" usemap="#bean" style="width:100%">
+  <img class="mySlides" src="Second Date Pick 3.png" usemap="#heart" usemap="#leave" usemap="#hit" usemap="#bean" style="width:100%">
+  <img class="mySlides" src="Second Date Pick 4.png" usemap="#heart" usemap="#leave" usemap="#hit" usemap="#bean" style="width:100%">
+  <img class="mySlides" src="Second Date Pick 5.png" usemap="#heart" usemap="#leave" usemap="#hit" usemap="#bean" style="width:100%">
+  <img class="mySlides" src="Second Date Pick 4.png" usemap="#heart" usemap="#leave" usemap="#hit" usemap="#bean" style="width:100%">
+  <img class="mySlides" src="Second Date Pick 3.png" usemap="#heart" usemap="#leave" usemap="#hit" usemap="#bean" style="width:100%">
+  <img class="mySlides" src="Second Date Pick 2.png" usemap="#heart" usemap="#leave" usemap="#hit" usemap="#bean" style="width:100%">
+   </div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 150);
+}
+  
+</script>
+
+<map name="heart"> 
+<area shape="rect" coords="9,322,136,396" href="Shop Date Flirt 2.html">
+
+<map name="leave">
+<area shape="rect" coords="162,322,288,396" href="Left Alone 2.html">
+  
+<map name="hit">
+<area shape="rect" coords="315,322,441,396" href="Take a Hit 2.html">
+
+<map name="bean">
+<area shape="rect" coords="468,322,594,396" href="Date is Bean 2.html">
+  
+</head>  
+
+<p style="font-size:22px;"> "So, how strong are you?" </p>
+  
+</body>
+</html>
