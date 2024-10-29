@@ -3,24 +3,18 @@
 <body>
 <head>
 <style>
-  
 body {background-color: #946978;}
 
 p {text-align: center;}
-
-img {
-display: block;
-margin-left: auto;
-margin-right: auto;
-}
-
 </style>
 
-<div class="Bean" style="max-width:600px">
+<link rel = "stylesheet" href="carousel.css">
+   
+<div class="bean" style="max-width:600px">
    <div id="wait">
-  <img class="mySlides" src="Beans.png" usemap="#bean" style="width:100%">
-  <img class="mySlides" src="Beans 2.png" usemap="#bean" style="width:100%">
-  <img class="mySlides" src="Beans 3.png" usemap="#bean" style="width:100%">
+  <img class="all" src="Beans.png" usemap="#bean" style="width:100%">
+  <img class="all" src="Beans 2.png" usemap="#bean" style="width:100%">
+  <img class="all" src="Beans 3.png" usemap="#bean" style="width:100%">
    </div>
 
 <script>
@@ -29,7 +23,7 @@ carousel();
 
 function carousel() {
   var i;
-  var x = document.getElementsByClassName("mySlides");
+  var x = document.getElementsByClassName("all");
   for (i = 0; i < x.length; i++) {
     x[i].style.display = "none";  
   }
