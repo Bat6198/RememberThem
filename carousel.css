@@ -1,23 +1,23 @@
-.Bean {
+.mySlides {
     width: 800px;
     height: 50px;
 }
-#wait {
+#mySlides {
     margin-left: auto;
     margin-right: auto;
 }
-#wait p {
+#mySlides p {
     display:none;
     position: absolute;
     top: 0;
     left: 0;
 
 }
-#wait p:first-child {
+#mySlides p:first-child {
     display:block;
 }
 
-#wait > p{
+#mySlides > p{
     width:800px;
     height:50px;
 }
