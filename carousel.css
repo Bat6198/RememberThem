@@ -1,13 +1,23 @@
 .bean {
-    width: 800px;
-    height: 50px;
-}
-#wait {
-    margin-left: auto;
+    position:absolute;
+    bottom: 5%;
+    left: 0;
+    right: 0;
     margin-right: auto;
+    margin-left: auto;
+    font-size: 30px;
 }
-#wait p {
+
+
+#wait div {
     display:none;
     position: absolute;
-    top: 0;
-    left: 0;
+    white-space: nowrap;
+    text-align: center;
+    width: 100%;
+
+
+}
+#wait div:first-child {
+    display:block;
+}        
