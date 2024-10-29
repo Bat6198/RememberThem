@@ -1,12 +1,12 @@
 .Bean {
-    width: 100%;
+    width: 600px;
     margin: auto;
     height:400px;
     background-color: rgba(0,0,0,0.1);
 }
 
 .wait{
-    width: 100%;
+    width: 600px;
     height: 400px;
 }
 
