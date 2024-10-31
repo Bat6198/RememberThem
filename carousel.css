@@ -5,7 +5,6 @@
 }
 
 .wait {
-    text-align:center;
     margin: 0px auto;
     width: 600px;
     height: 400px;
@@ -15,5 +14,4 @@
   margin: 0px auto; // center
   width:600px; 
   height:400px; 
-  text-align:center; 
 } 
