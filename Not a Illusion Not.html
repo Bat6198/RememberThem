@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<body>
+<head>
+<style>
+
+body {background-color: #415ED6;}
+  
+p {text-align: center;}
+   
+img {
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+
+</style>
+
+<link rel = "stylesheet" href="carousel.css">
+   
+<div class="bean" style="max-width:600px">
+   <div id="wait">
+  <img class="all" src="Not a Illusion Not 1.png" usemap="#not" style="width:100%">
+  <img class="all" src="Not a Illusion Not 2.png" usemap="#not" style="width:100%">
+  <img class="all" src="Not a Illusion Not 3.png" usemap="#not" style="width:100%">
+  <img class="all" src="Not a Illusion Not 4.png" usemap="#not" style="width:100%">
+  <img class="all" src="Not a Illusion Not 5.png" usemap="#not" style="width:100%">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("all");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 150);
+}
+</script>
+
+<map name="not">
+<area shape="rect" coords="458,314,584,387" href="Not a Illusion is Not.html">
+  
+</head>
+  
+<p style="font-size:22px;"> "In the news today the background has been broken." </p>
+
+<p style="font-size:22px;"> Oh come on, the illusion is broken too. Do better guys. </p>
+   
+</body>
+</html>
