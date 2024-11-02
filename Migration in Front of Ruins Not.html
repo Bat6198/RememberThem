@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<body>
+<head>
+<style>
+
+body {background-color: #CC1AB7;}
+
+p {text-align: center;}
+   
+img {
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+
+</style>
+
+<link rel = "stylesheet" href="carousel.css">
+   
+<div class="bean" style="max-width:600px">
+   <div id="wait">
+  <img class="all" src="Migration in Front of Ruins Not 1.png" usemap="#up" usemap="#left" usemap ="#museum" usemap="#not" style="width:100%">
+  <img class="all" src="Migration in Front of Ruins Not 2.png" usemap="#up" usemap="#left" usemap ="#museum" usemap="#not" style="width:100%">
+  <img class="all" src="Migration in Front of Ruins Not 3.png" usemap="#up" usemap="#left" usemap ="#museum" usemap="#not" style="width:100%">
+  <img class="all" src="Migration in Front of Ruins Not 4.png" usemap="#up" usemap="#left" usemap ="#museum" usemap="#not" style="width:100%">
+  <img class="all" src="Migration in Front of Ruins Not 5.png" usemap="#up" usemap="#left" usemap ="#museum" usemap="#not" style="width:100%">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("all");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 150);
+}
+</script>
+
+<map name="up">
+<area shape="rect" coords="0,171,26,239" href="Graveyard Not.html">
+<map name="left">
+<area shape="rect" coords="0,268,25,320" href="Robot Cemetery Not.html">
+<map name="museum">
+<area shape="rect" coords="210,2,597,266" href="Eyes Not.html">
+<map name="not">
+<area shape="rect" coords="458,314,584,387" href="Migration in Front of Ruins is Not.html">
+  
+</head>
+  
+<p style="font-size:22px;"> They are migrating. The only things here that are really full of life. </p>
+   
+</body>
+</html>
