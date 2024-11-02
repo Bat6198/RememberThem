@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<body>
+<head>
+<style>
+
+body {background-color: #FAFAFA;}
+
+p {text-align: center;}
+   
+img {
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+
+</style>
+
+<link rel = "stylesheet" href="carousel.css">
+   
+<div class="bean" style="max-width:600px">
+   <div id="wait">
+  <img class="all" src="Make Music ! Not 1.png" usemap="#play" usemap="#pause" usemap ="#loop" usemap="#hesitate" usemap="#back" usemap="#not" style="width:100%">
+  <img class="all" src="Make Music ! Not 2.png" usemap="#play" usemap="#pause" usemap ="#loop" usemap="#hesitate" usemap="#back" usemap="#not" style="width:100%">
+  <img class="all" src="Make Music ! Not 3.png" usemap="#play" usemap="#pause" usemap ="#loop" usemap="#hesitate" usemap="#back" usemap="#not" style="width:100%">
+  <img class="all" src="Make Music ! Not 4.png" usemap="#play" usemap="#pause" usemap ="#loop" usemap="#hesitate" usemap="#back" usemap="#not" style="width:100%">
+  <img class="all" src="Make Music ! Not 5.png" usemap="#play" usemap="#pause" usemap ="#loop" usemap="#hesitate" usemap="#back" usemap="#not" style="width:100%">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("all");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 150);
+}
+</script>
+
+<map name="play">
+<area shape="rect" coords="32,255,99,342" href="Make Music (Play) Not.html">
+<map name="pause">
+<area shape="rect" coords="181,260,236,339" href="Make Music ! Not.html">
+<map name="loop">
+<area shape="rect" coords="309,262,394,340" href="Make Music (Loop) Not.html">
+<map name="hesitate">
+<area shape="rect" coords="493,255,545,343" href="Make Music (Hesitate) Not.html">
+<map name="back">
+<area shape="rect" coords="0,0,63,41" href="Swattin Not.html">
+<map name="not">
+<area shape="rect" coords="247,12,375,87" href="Make Music ! is Not.html">
+  
+</head>
+  
+<p style="font-size:22px;"> They loved their music. </p>
+   
+</body>
+</html>
