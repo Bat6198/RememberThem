@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<body>
+<head>
+<style>
+
+body {background-color: #D8FFD0;}
+
+p {text-align: center;}
+   
+img {
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+
+</style>
+
+<link rel = "stylesheet" href="carousel.css">
+   
+<div class="bean" style="max-width:600px">
+   <div id="wait">
+  <img class="all" src="The Faces A Not 1.png" usemap="#uparrow" usemap="#rightarrow" usemap
+="#goback" usemap="#not" style="width:100%">
+  <img class="all" src="The Faces A Not 2.png" usemap="#uparrow" usemap="#rightarrow" usemap
+="#goback" usemap="#not" style="width:100%">
+  <img class="all" src="The Faces A Not 3.png" usemap="#uparrow" usemap="#rightarrow" usemap
+="#goback" usemap="#not" style="width:100%">
+  <img class="all" src="The Faces A Not 4.png" usemap="#uparrow" usemap="#rightarrow" usemap
+="#goback" usemap="#not" style="width:100%">
+  <img class="all" src="The Faces A Not 5.png" usemap="#uparrow" usemap="#rightarrow" usemap
+="#goback" usemap="#not" style="width:100%">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("all");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 150);
+}
+</script>
+
+<map name="uparrow">
+<area shape="rect" coords="3,4,89,52" href="The Faces C Not.html">
+<map name="rightarrow">
+<area shape="rect" coords="529,139,595,189" href="The Faces B Not.html">
+<map name="goback">
+<area shape="rect" coords="118,298,24,376" href="Behind the Faces Not.html">  
+<map name="not">
+<area shape="rect" coords="185,315,311,388" href="The Faces A is Not.html">
+  
+</head>
+  
+<p style="font-size:22px;"><i> There are three faces in front of you. The head on the left tells you to go up and to the left. The head in the middle tells you to go right. The head on the bottom right tells you to return where you came, the others can't be trusted. </i></p>
+   
+</body>
+</html>
