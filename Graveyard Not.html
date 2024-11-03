@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<body>
+<head>
+<style>
+
+body {background-color: #CC1AB7;}
+
+p {text-align: center;}
+   
+img {
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+
+</style>
+
+<link rel = "stylesheet" href="carousel.css">
+   
+<div class="bean" style="max-width:600px">
+   <div id="wait">
+  <img class="all" src="Graveyard Not 1.png" usemap="#back" usemap="#grave" usemap="#not" style="width:100%">
+  <img class="all" src="Graveyard Not 2.png" usemap="#back" usemap="#grave" usemap="#not" style="width:100%">
+  <img class="all" src="Graveyard Not 3.png" usemap="#back" usemap="#grave" usemap="#not" style="width:100%">
+  <img class="all" src="Graveyard Not 4.png" usemap="#back" usemap="#grave" usemap="#not" style="width:100%">
+  <img class="all" src="Graveyard Not 5.png" usemap="#back" usemap="#grave" usemap="#not" style="width:100%">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("all");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 150);
+}
+</script>
+
+<map name="back">
+<area shape="poly" coords="0,0,600,0,600,305,242,305,239,192,184,164,179,188,235,211,238,305,155,309,447,307,449,400,0,400" href="Migration in Front of Ruins Not.html">
+<map name="grave">
+<area shape="poly" coords="187,168,235,193,237,210,183,186" href="Hidden Grave Not.html">
+<map name="not">
+<area shape="rect" coords="585,388,457,313" href="Graveyard is Not.html">
+  
+</head>
+  
+<p style="font-size:22px;"> Empty. Useless. I should go back. </p>
+   
+</body>
+</html>
