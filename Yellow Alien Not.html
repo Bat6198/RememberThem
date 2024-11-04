@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<body>
+<head>
+<style>
+
+body {background-color: #BF4C5B;}
+
+p {text-align: center;}
+   
+img {
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+
+</style>
+
+<link rel = "stylesheet" href="carousel.css">
+   
+<div class="bean" style="max-width:600px">
+   <div id="wait">
+  <img class="all" src="Yellow Alien Not 1.png" usemap="#left" usemap="#right" usemap="#ufo" usemap="#not" style="width:100%">
+  <img class="all" src="Yellow Alien Not 2.png" usemap="#left" usemap="#right" usemap="#ufo" usemap="#not" style="width:100%">
+  <img class="all" src="Yellow Alien Not 3.png" usemap="#left" usemap="#right" usemap="#ufo" usemap="#not" style="width:100%">
+  <img class="all" src="Yellow Alien Not 4.png" usemap="#left" usemap="#right" usemap="#ufo" usemap="#not" style="width:100%">
+  <img class="all" src="Yellow Alien Not 5.png" usemap="#left" usemap="#right" usemap="#ufo" usemap="#not" style="width:100%">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("all");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 150);
+}
+</script>
+
+<map name="left">
+<area shape="rect" coords="61,139,5,186" href="Dark Fungus.html">
+<map name="right">
+<area shape="rect" coords="536,145,593,190" href="Red Triangle.html">
+<map name="ufo">
+<area shape="rect" coords="106,155,201,222" href="Stonks.html">
+<map name="not">
+<area shape="rect" coords="15,313,143,388" href="Yellow Alien is Not.html">
+  
+</head>
+  
+<p style="font-size:22px;"> Even in this land, these beings are strange. </p>
+  
+</body>
+</html>
