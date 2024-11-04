@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<body>
+<head>
+<style>
+
+body {background-color: #DAE1EB;}
+
+p {text-align: center;}
+   
+img {
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+
+</style>
+
+<link rel = "stylesheet" href="carousel.css">
+   
+<div class="bean" style="max-width:600px">
+   <div id="wait">
+  <img class="all" src="Dark Door of Green Root Not 1.png" usemap="#door" usemap="#not" style="width:100%">
+  <img class="all" src="Dark Door of Green Root Not 2.png" usemap="#door" usemap="#not" style="width:100%">
+  <img class="all" src="Dark Door of Green Root Not 3.png" usemap="#door" usemap="#not" style="width:100%">
+  <img class="all" src="Dark Door of Green Root Not 4.png" usemap="#door" usemap="#not" style="width:100%">
+  <img class="all" src="Dark Door of Green Root Not 5.png" usemap="#door" usemap="#not" style="width:100%">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("all");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 150);
+}
+</script>
+
+<map name="door">
+<area shape="poly" coords="311,138,362,138,383,158,394,215,398,299,287,299,282,199,295,156" href="Within the Dark Door of Green Root Not.html"> 
+<map name="not">
+<area shape="rect" coords="458,314,584,387" href="Dark Door of Green Root is Not.html">
+
+</head>
+  
+<p style="font-size:22px;"> Curious, I'm used to eyes being fans of fruit, and some grain. These have a root vegetable instead. Way to go against the grain! </p>
+   
+</body>
+</html>
