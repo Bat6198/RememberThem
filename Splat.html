@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<body>
+<head>
+<style>
+body {background-color: #F4F7E2;}
+
+p {text-align: center;}
+</style>
+
+<link rel = "stylesheet" href="carousel.css">
+   
+<div class="bean" style="max-width:600px">
+   <div id="wait">
+  <img class="all" src="Splat 1.png" style="width:100%">
+  <img class="all" src="Splat 2.png" style="width:100%">
+  <img class="all" src="Splat 3.png" style="width:100%">
+  <img class="all" src="Splat 4.png" style="width:100%">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("all");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 200);
+}
+</script>
+</head>
+
+<p style="font-size:22px;"> There, that'll teach you to not look displeasing to my eyes. </p>
+   
+</body>
+</html>
