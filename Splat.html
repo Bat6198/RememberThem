@@ -34,6 +34,9 @@ function carousel() {
   x[myIndex-1].style.display = "block";  
   setTimeout(carousel, 500);
 }
+$(document).ready(function() {      
+    $('.carousel').carousel('pause');
+});
 </script>
 </head>
 
