@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<body>
+<head>
+<style>
+
+body {background-color: #363636;}
+
+p {text-align: center;}
+   
+img {
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+
+</style>
+
+<link rel = "stylesheet" href="carousel.css">
+   
+<div class="bean" style="max-width:600px">
+   <div id="wait">
+  <img class="all" src="Migration of the Worms Not 1.png" usemap="#up" usemap="#right" usemap="#not" style="width:100%">
+  <img class="all" src="Migration of the Worms Not 2.png" usemap="#up" usemap="#right" usemap="#not" style="width:100%">
+  <img class="all" src="Migration of the Worms Not 3.png" usemap="#up" usemap="#right" usemap="#not" style="width:100%">
+  <img class="all" src="Migration of the Worms Not 4.png" usemap="#up" usemap="#right" usemap="#not" style="width:100%">
+  <img class="all" src="Migration of the Worms Not 5.png" usemap="#up" usemap="#right" usemap="#not" style="width:100%">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("all");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 150);
+}
+</script>
+
+<map name="up">
+<area shape="rect" coords="0,0,68,56" href="Dark Fungus Not.html">
+<map name="down">
+<area shape="rect" coords="519,333,599,397" href="Metamorphosis of the Worms Not.html">
+<map name="not">
+<area shape="rect" coords="15,313,143,388" href="Migration of the Worms is Not.html">
+  
+</head>
+  
+<p style="font-size:22px; color:white;"> They are making their way over. "One of our clan got lost, we miss her so." </p>
+   
+</body>
+</html>
